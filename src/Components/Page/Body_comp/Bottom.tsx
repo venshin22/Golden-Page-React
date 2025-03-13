@@ -13,25 +13,25 @@ export default function Bottom() {
         <div className="w-[75rem] flex flex-col items-center justify-center text-white">
 
             <div className="w-full flex flex-col lg:flex-row items-center">
-                <div className="w-[18.75rem] flex flex-col bg-[#215a94] items-center justify-center">
+                <div className="w-[18.75rem] flex flex-col bg-[#215a94] items-center justify-center hover:cursor-pointer">
                     <img alt="Social Media Marketing" src="\assets\socmed.png"/>
                     <div className="bg-[#204e80] w-full py-4 text-center hover:bg-[#022b59]">
                     <h1>Social Media Marketing</h1>
                     </div>
                 </div>
-                <div className="w-[18.75rem] flex flex-col bg-[#56aee3] items-center justify-center">
+                <div className="w-[18.75rem] flex flex-col bg-[#56aee3] items-center justify-center hover:cursor-pointer">
                     <img alt="Organic Long-Term SEO" src="\assets\se.png"/>
                     <div className="bg-[#44a2db] w-full py-4 text-center hover:bg-[#1e81b0]">
                     <h1>Organic Long-Term SEO</h1>
                     </div>
                 </div>
-                <div className="w-[18.75rem] flex flex-col bg-[#a1c627] items-center justify-center">
+                <div className="w-[18.75rem] flex flex-col bg-[#a1c627] items-center justify-center hover:cursor-pointer">
                     <img alt="Advanced Analytics" src="\assets\analytic.png"/>
                     <div className="bg-[#90b636] w-full py-4 text-center hover:bg-[#8bac24]">
                     <h1>Advanced Analytics</h1>
                     </div>
                 </div>
-                <div className="w-[18.75rem] flex flex-col bg-[#8bac24] items-center justify-center">
+                <div className="w-[18.75rem] flex flex-col bg-[#8bac24] items-center justify-center hover:cursor-pointer">
                     <img alt="Pay Per Click Strategies" src="\assets\ads.png"/>
                     <div className="bg-[#7da02c] w-full py-4 text-center hover:bg-[#5e7f0b]">
                     <h1>Pay Per Click Strategies</h1>
