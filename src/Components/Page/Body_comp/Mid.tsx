@@ -11,7 +11,7 @@ import ServiceCard from "./mComponent/ServiceCard";
 export default function Mid() {
   return (
     <>
-      <div className="flex w-full h-full items-center justify-center p-6 border border-y-gray-200"> 
+      <div className="flex w-full h-full items-center justify-center p-6 border border-y-gray-200 border-x-0"> 
         <div className="flex flex-col items-center w-[75rem] space-y-8">
 
             <div className="w-full flex flex-col lg:flex-row items-center justify-between text-gray-700 gap-8">
@@ -58,7 +58,7 @@ export default function Mid() {
       </div>
 
       
-      <div className="flex w-full h-full items-center justify-center p-6 border border-y-gray-200"> 
+      <div className="flex w-full h-full items-center justify-center p-6 border border-y-gray-200 border-x-0"> 
         <div className="flex flex-col lg:flex-row items-center w-[75rem] space-y-8">
           <div>
             <img src="\assets\icons.png" alt="icon" className="w-[47rem]"/>

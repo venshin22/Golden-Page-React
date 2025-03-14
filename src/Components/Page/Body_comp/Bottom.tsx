@@ -4,7 +4,7 @@ import { Anchor, CircleDollarSign, Mail, MapPin, MapPinned, MessageCircle, Penci
 export default function Bottom() {
     return (
         <>
-        <div className="flex flex-col items-center justify-center pt-4 pb-10 px-8 border border-gray-200">
+        <div className="flex flex-col items-center justify-center pt-4 pb-10 px-8 border border-gray-200 border-x-0">
         <div className="flex flex-col lg:flex w-full items-center justify-center text-center">
             <div className="flex flex-col items-center justify-center py-8 space-y-4 text-gray-600">
                 <h1 className="text-5xl font-thin">Full Service Digital Marketing Agency</h1>
@@ -89,7 +89,7 @@ export default function Bottom() {
 
             </div>
 
-            <div className="w-full max-w-[75rem] flex flex-col lg:flex-row gap-8 justify-between mx-auto">
+            <div className="w-full max-w-[75rem] flex flex-col lg:flex-row items-center gap-8 justify-between mx-auto">
 
             <FeatureCard
                 icon={Target}
