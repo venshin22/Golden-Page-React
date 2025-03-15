@@ -12,7 +12,7 @@ export default function Mid() {
   return (
     <>
       <div className="flex w-full h-full items-center justify-center p-6 border border-y-gray-200 border-x-0"> 
-        <div className="flex flex-col items-center w-[75rem] space-y-8">
+        <div className="flex flex-col items-center w-full lg:w-[75rem] space-y-8">
 
             <div className="w-full flex flex-col lg:flex-row items-center justify-between text-gray-700 gap-8">
 
@@ -51,7 +51,7 @@ export default function Mid() {
             <img
               alt="logo"
               src="\assets\g_arrow.png"
-              className="object-cover w-[75rem] h-auto rounded-lg shadow-md mb-6"
+              className="object-cover w-full lg:w-[75rem] h-auto rounded-lg shadow-md mb-6"
             />
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Mid() {
 
       
       <div className="flex w-full h-full items-center justify-center p-6 border border-y-gray-200 border-x-0"> 
-        <div className="flex flex-col lg:flex-row items-center w-[75rem] space-y-8">
+        <div className="flex flex-col w-full lg:flex-row items-center lg:w-[75rem] space-y-8">
           <div>
             <img src="\assets\icons.png" alt="icon" className="w-[47rem]"/>
           </div>
@@ -75,7 +75,7 @@ export default function Mid() {
               keywords.
             </span>
 
-            <div className="flex items-center mt-11 text-2xl text-gray-500">
+            <div className="flex items-center mt-11 text-lg lg:text-2xl text-gray-500">
             <User
                     color="gray"
                     size={38}
@@ -84,16 +84,16 @@ export default function Mid() {
                   />
                   Connect with pre-qualified customers
             </div>
-            <div className="flex items-center mt-11 text-2xl text-gray-500">
+            <div className="flex items-center mt-11 text-lg lg:text-2xl text-gray-500">
             <ClockArrowDown
                     color="gray"
-                    size={38}
+                    size={30}
                     strokeWidth={0.5}
                     className="mr-6"
                   />
                   Save time and money
             </div>
-            <div className="flex items-center mt-11 text-2xl text-gray-500">
+            <div className="flex items-center mt-11 text-lg lg:text-2xl text-gray-500">
             <Trophy
                     color="gray"
                     size={38}
@@ -102,7 +102,7 @@ export default function Mid() {
                   />
                   Rely on an experience and knowledgeable team
             </div>
-            <div className="flex items-center mt-12 text-lg font-thin text-sky-500">
+            <div className="flex items-center mt-12 text-sm lg:text-lg font-thin text-sky-500">
             <button className="py-2 px-4 border border-gray-200 rounded-md flex items-center hover:bg-sky-700 hover:text-white">
               <ArrowRight strokeWidth={1} className="mr-4" />Learn More About Us</button>
             </div>

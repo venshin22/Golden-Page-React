@@ -4,17 +4,17 @@ import { Anchor, CircleDollarSign, Mail, MapPin, MapPinned, MessageCircle, Penci
 export default function Bottom() {
     return (
         <>
-        <div className="flex flex-col items-center justify-center pt-4 pb-10 px-8 border border-gray-200 border-x-0">
-        <div className="flex flex-col lg:flex w-full items-center justify-center text-center">
-            <div className="flex flex-col items-center justify-center py-8 space-y-4 text-gray-600">
-                <h1 className="text-5xl font-thin">Full Service Digital Marketing Agency</h1>
-                <span className="text-xl">Search Engine & Social Media Optimization Experts</span>
+        <div className="flex flex-col w-full items-center justify-center pt-4 pb-10 px-8 border border-gray-200 border-x-0">
+        <div className="flex flex-col lg:flex-row w-full items-center justify-center text-center">
+            <div className="flex flex-col w-full lg:w-[75rem] items-center justify-center py-8 space-y-4 text-gray-600">
+                <h1 className="text-4xl lg:text-5xl font-thin">Full Service Digital Marketing Agency</h1>
+                <span className="lg:text-xl">Search Engine & Social Media Optimization Experts</span>
             </div>
         </div>
 
         <div className="w-full flex flex-col items-center justify-center text-white">
 
-            <div className="w-[75rem] flex flex-col lg:flex-row items-center justify-center p-4">
+            <div className="w-full lg:w-[75rem] gap-4 md:gap-0 flex flex-col lg:flex-row items-center justify-center p-4">
                 {/* Social Media Marketing */}
                 <PostCard
                     imgSrc="/assets/socmed.png"
@@ -64,7 +64,7 @@ export default function Bottom() {
             <div className="w-full flex flex-col items-center md:items-start gap-8 md:gap-14 justify-center mt-8 text-gray-600 mx-8">
 
 
-            <div className="w-full max-w-[75rem] flex flex-col lg:flex-row items-center justify-between gap-8 mx-auto">
+            <div className="w-full lg:w-[75rem] flex flex-col lg:flex-row items-center justify-between gap-8 mx-auto">
 
             <FeatureCard
                 icon={MapPin}
@@ -89,7 +89,7 @@ export default function Bottom() {
 
             </div>
 
-            <div className="w-full max-w-[75rem] flex flex-col lg:flex-row items-center gap-8 justify-between mx-auto">
+            <div className="w-full lg:w-[75rem] flex flex-col lg:flex-row items-center gap-8 justify-between mx-auto">
 
             <FeatureCard
                 icon={Target}

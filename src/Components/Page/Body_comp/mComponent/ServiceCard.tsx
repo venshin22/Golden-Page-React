@@ -24,7 +24,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   const borderClass = borderColor ? `border-${borderColor}` : 'border-transparent';
   
   return (
-    <div className="flex w-full max-w-96 pl-2 pr-6">
+    <div className="flex w-full lg:w-96 pl-2 pr-6">
       <div className="flex mr-4 p-2">
         {Icon && (
           <Icon 

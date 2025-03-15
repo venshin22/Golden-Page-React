@@ -3,7 +3,7 @@ import Mid from "./Body_comp/Mid"
 import Bottom from "./Body_comp/Bottom"
 export default function Body() {
     return(
-        <div className="h-full w-full mr-8 lg:mr-4 bg-white">
+        <div className="h-full w-full bg-white">
             <Top/>
             <Mid />
             <Bottom />

@@ -4,7 +4,7 @@ export default function Top() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     
     return(
-        <div className="flex w-full p-8 items-center justify-center border border-y-gray-200 border-x-0">
+        <div className="flex w-full p-6 items-center justify-center border border-y-gray-200 border-x-0">
             <div 
                 className="mx-4"
                 style={{ perspective: "600px" }}

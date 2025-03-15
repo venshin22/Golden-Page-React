@@ -11,9 +11,9 @@ export default function Header() {
   
     return(
         <div className="flex flex-col items-center justify-between">
-        <div className="flex flex-col lg:flex-row w-[75rem] shrink items-center justify-between gap-8 bg-white py-7">
+        <div className="flex flex-col lg:flex-row w-full lg:w-[75rem] shrink items-center justify-between gap-8 bg-white pt-7 lg:py-7">
             <div className="flex ">
-                <img src="/assets/golden_img.png" alt="logo_blck" className="h-12"/>
+                <img src="/assets/golden_img.png" alt="logo_blck" className="h-10 lg:h-12"/>
             </div>
             <div className="hidden lg:block lg:flex-row lg:text-xl font-thin">
                 <ul className="flex p-4 space-x-6">

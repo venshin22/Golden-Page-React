@@ -5,7 +5,7 @@ export default function Footer() {
         <>
             <footer className="flex flex-col w-full items-center justify-between px-4 md:px-8 py-8 bg-[#282d30] text-gray-100">
                 <div className="flex flex-col lg:flex-row items-center gap-5 justify-center px-4">
-                    <img src="/assets/golden_img2.png" alt="logo" className="h-16" />
+                    <img src="/assets/golden_img2.png" alt="logo" className="h-12 lg:h-16" />
                     <h1 className="text-xl lg:text-2xl text-gray-100 font-sans uppercase text-center">
                         Digital Marketing That Grows Your Business
                     </h1>
@@ -29,13 +29,13 @@ export default function Footer() {
             <div className="w-full flex items-center justify-center bg-[#25282a] py-6">
                 <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between px-4 gap-4">
                     <div className="flex gap-2 mr-8">
-                        <a href="https://www.facebook.com/goldenarrowdigitalsolution/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/goldenarrowdigitalsolution/" target="_blank">
                             <Facebook color="gray" size={36} className="hover:bg-[#56aee3] rounded-lg p-2" />
                         </a>
-                        <a href="https://www.youtube.com/@GoldenArrowDigitalPH" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.youtube.com/@GoldenArrowDigitalPH" target="_blank">
                             <Youtube color="gray" size={36} className="hover:bg-[#56aee3] rounded-lg p-2" />
                         </a>
-                        <a href="https://www.instagram.com/goldenarrowdigitalsolution/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/goldenarrowdigitalsolution/" target="_blank">
                             <Instagram color="gray" size={36} className="hover:bg-[#56aee3] rounded-lg p-2" />
                         </a>
                     </div>
