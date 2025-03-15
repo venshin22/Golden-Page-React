@@ -4,7 +4,7 @@ export default function Top() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     
     return(
-        <div className="flex w-full p-8 items-center justify-center border border-y-gray-200">
+        <div className="flex w-full p-8 items-center justify-center border border-y-gray-200 border-x-0">
             <div 
                 className="mx-4"
                 style={{ perspective: "600px" }}
@@ -49,7 +49,7 @@ export default function Top() {
             
             <div 
                 className="mx-4"
-                style={{ perspective: "800px" }}
+                style={{ perspective: "700px" }}
                 onMouseEnter={() => setHoveredIndex(2)}
                 onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -58,12 +58,12 @@ export default function Top() {
                     style={{ 
                         transformStyle: "preserve-3d",
                         transform: hoveredIndex === 2 
-                            ? "rotateY(-10deg) rotateX(0deg)" 
+                            ? "rotateY(15deg) rotateX(0deg)" 
                             : "rotateY(0deg) rotateX(0)"
                     }}
                 >
                     <div style={{ backfaceVisibility: "hidden" }}>
-                        <img src="\assets\sales_optz.png" alt="slsOptimization" className='shadow-xl'/>
+                        <img src="\assets\sales_optz.png" alt="slsOptimization" className='shadow-xl w-[50rem]'/>
                     </div>
                 </div>
             </div>

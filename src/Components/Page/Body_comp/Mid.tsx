@@ -7,62 +7,43 @@ import {
   Trophy,
   ArrowRight,
 } from "lucide-react";
+import ServiceCard from "./mComponent/ServiceCard";
 export default function Mid() {
   return (
     <>
-      <div className="flex w-full] h-full items-center justify-center p-6 border border-y-gray-200"> 
+      <div className="flex w-full h-full items-center justify-center p-6 border border-y-gray-200 border-x-0"> 
         <div className="flex flex-col items-center w-[75rem] space-y-8">
 
-            <div className="w-full flex flex-col lg:flex-row items-center justify-between text-gray-700">
+            <div className="w-full flex flex-col lg:flex-row items-center justify-between text-gray-700 gap-8">
 
               {/* Online Reputation Management */}
-                <div className="flex w-[23.5rem]">
-                  <div className="flex mr-4 p-2">
-                    <ShieldHalf color="purple" size={65} strokeWidth={0.3} className="p-4 border border-purple-300 rounded-2xl"/>
-                  </div>
-                  <div className="flex flex-col font-thin">
-                  <h1 className="text-2xl pb-4">
-                    Online Reputation Management
-                  </h1>
-                  <span className="text-sm">
-                    Analyzing negative materials about your brand and addressing
-                    them with sentiment analysis and press release distribution.
-                  </span>
-                  </div>
-                </div>
+              <ServiceCard 
+                icon={ShieldHalf} 
+                iconStrokeWidth={0.5}
+                iconColor="purple" 
+                borderColor="purple-300"
+                title="Online Reputation Management" 
+                description="Analyzing negative materials about your brand and addressing them with sentiment analysis and press release distribution." 
+              />
 
-                {/* Conversion Rate Optimization */}
-                <div className="flex w-[23.5rem]">
-                  <div className="flex mr-4 p-2">
-                    <SlidersVertical color="#f5af89" size={65} strokeWidth={1} className="p-4 border border-orange-200 rounded-2xl"/>
-                  </div>
-                  <div className="flex flex-col font-thin">
-                  <h1 className="text-2xl pb-4">
-                    Conversion Rate Optimization
-                  </h1>
-                  <span className="text-sm">
-                    Turn your visitors into customers with our team of
-                    experts. We'll analyze your website and develop a suitable conversion-rate strategy.
-                  </span>
-                  </div>
-                </div>
+              {/* Conversion Rate Optimization */}
+              <ServiceCard 
+                icon={SlidersVertical}
+                iconStrokeWidth={1.4} 
+                iconColor="#f7c2a5" 
+                borderColor="orange-200"
+                title="Conversion Rate Optimization" 
+                description="Turn your visitors into customers with our team of experts. We'll analyze your website and develop a suitable conversion-rate strategy." 
+              />
 
-                {/* Real-time Social Media Analytic */}
-                <div className="flex w-[23.5rem]">
-                  <div className="flex mr-4 p-2">
-                    <ChartNetwork color="#60d1d0" size={65} strokeWidth={1} className="p-4 border border-teal-200 rounded-2xl"/>
-                  </div>
-                  <div className="flex flex-col font-thin">
-                  <h1 className="text-2xl pb-4">
-                    Real-Time Social Media Analytics
-                  </h1>
-                  <span className="text-sm">
-                    We produce bespoke reports and technical audits that
-                    can help your business with specific areas of digital
-                    marketing.
-                  </span>
-                  </div>
-                </div>
+              {/* Online Reputation Management */}
+              <ServiceCard 
+                icon={ChartNetwork} 
+                iconColor="#60d1d0" 
+                borderColor="teal-200"
+                title="Real-Time Social Media Analytics" 
+                description="We produce bespoke reports and technical audits that can help your business with specific areas of digital marketing." 
+              />
 
             </div>
 
@@ -77,12 +58,13 @@ export default function Mid() {
       </div>
 
       
-        <div className="w-full flex items-center justify-center">
-          <div className="w-full flex flex-col lg:flex-row items-center justify-center">
+      <div className="flex w-full h-full items-center justify-center p-6 border border-y-gray-200 border-x-0"> 
+        <div className="flex flex-col lg:flex-row items-center w-[75rem] space-y-8">
           <div>
-            <img src="\assets\icons.png" alt="icon"/>
+            <img src="\assets\icons.png" alt="icon" className="w-[47rem]"/>
           </div>
-          <div className="flex flex-col font-thin text-gray-700 w-[42.5rem] py-[4rem] ml-8 pl-6">
+
+          <div className="flex flex-col font-thin text-gray-700 w-full py-[4rem] mx-8 px-8">
             <h1 className="text-4xl mb-10">
               Appear On the Front Page of Google!
             </h1>
@@ -92,6 +74,7 @@ export default function Mid() {
               highest rankings -- even when it comes to highly competitive
               keywords.
             </span>
+
             <div className="flex items-center mt-11 text-2xl text-gray-500">
             <User
                     color="gray"
