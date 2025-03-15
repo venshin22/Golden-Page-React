@@ -28,7 +28,7 @@ export default function Footer() {
 
             <div className="w-full flex items-center justify-center bg-[#25282a] py-6">
                 <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between px-4 gap-4">
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 mr-8">
                         <a href="https://www.facebook.com/goldenarrowdigitalsolution/" target="_blank" rel="noopener noreferrer">
                             <Facebook color="gray" size={36} className="hover:bg-[#56aee3] rounded-lg p-2" />
                         </a>

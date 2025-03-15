@@ -14,7 +14,7 @@ export default function Bottom() {
 
         <div className="w-full flex flex-col items-center justify-center text-white">
 
-            <div className="w-[75rem] flex flex-col lg:flex-row items-center justify-center">
+            <div className="w-[75rem] flex flex-col lg:flex-row items-center justify-center p-4">
                 {/* Social Media Marketing */}
                 <PostCard
                     imgSrc="/assets/socmed.png"
