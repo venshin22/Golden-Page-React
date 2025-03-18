@@ -33,6 +33,7 @@ export default function Header() {
                         <button 
                         id="dropdownHoverServices"
                         type="button"
+                        onClick={() => ("/Services")}
                         onMouseEnter={() => setServicesDropdownVisible(true)}
                         onMouseLeave={() => setServicesDropdownVisible(false)}  
                         className="hover:text-blue-600"

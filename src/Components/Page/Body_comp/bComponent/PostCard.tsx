@@ -1,7 +1,7 @@
 import React from "react";
-import { PostCardData } from "../../../../types/PostCardTypes";
+import { PostCardTypes } from "../../../../types/PostCardTypes";
 
-type PostCardProps = PostCardData;
+type PostCardProps = PostCardTypes;
 
 const PostCard: React.FC<PostCardProps> = ({
     imgSrc,

@@ -48,7 +48,7 @@ export default function Footer() {
                     </a>
 
                     <span className="text-sm text-gray-50 font-thin text-center">
-                        ©2023 Golden Arrow Solution. All Rights Reserved.
+                    © {new Date().getFullYear()} Golden Arrow. All rights reserved.
                     </span>
                 </div>
             </div>

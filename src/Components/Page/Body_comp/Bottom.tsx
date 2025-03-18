@@ -1,6 +1,6 @@
 import PostCard from "./bComponent/PostCard"
 import FeatureCard from "./bComponent/FeatureCard"
-import { Anchor, CircleDollarSign, Mail, MapPin, MapPinned, MessageCircle, PencilRuler, Target } from "lucide-react"
+import { CircleDollarSign, MessageCircle, } from "lucide-react"
 import { postcardData } from "../../../data/PostCardData"
 import { featurecardData } from "../../../data/FeatureCardData"
 

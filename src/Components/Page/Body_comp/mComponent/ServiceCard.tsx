@@ -1,8 +1,8 @@
 import React from "react";
 import { LucideIcon } from "lucide-react";
-import { ServiceCardData } from "../../../../types/ServiceCardTypes";
+import { ServiceCardTypes } from "../../../../types/ServiceCardTypes";
 
-type ServiceCardProps = ServiceCardData;
+type ServiceCardProps = ServiceCardTypes;
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   icon: Icon,

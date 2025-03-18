@@ -1,4 +1,4 @@
-export interface PostCardData {
+export interface PostCardTypes {
     imgSrc?: string;
     title?: string;
     alt?: string;
