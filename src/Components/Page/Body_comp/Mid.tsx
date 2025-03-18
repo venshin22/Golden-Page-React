@@ -1,13 +1,12 @@
 import {
-  ShieldHalf,
-  SlidersVertical,
-  ChartNetwork,
   User,
   ClockArrowDown,
   Trophy,
   ArrowRight,
 } from "lucide-react";
 import ServiceCard from "./mComponent/ServiceCard";
+import { servicecardData } from "../../../data/ServiceCardData";
+
 export default function Mid() {
   return (
     <>
@@ -16,34 +15,10 @@ export default function Mid() {
 
             <div className="w-full flex flex-col lg:flex-row items-center justify-between text-gray-700 gap-8">
 
-              {/* Online Reputation Management */}
-              <ServiceCard 
-                icon={ShieldHalf} 
-                iconStrokeWidth={0.5}
-                iconColor="purple" 
-                borderColor="purple-300"
-                title="Online Reputation Management" 
-                description="Analyzing negative materials about your brand and addressing them with sentiment analysis and press release distribution." 
-              />
-
-              {/* Conversion Rate Optimization */}
-              <ServiceCard 
-                icon={SlidersVertical}
-                iconStrokeWidth={1.4} 
-                iconColor="#f7c2a5" 
-                borderColor="orange-200"
-                title="Conversion Rate Optimization" 
-                description="Turn your visitors into customers with our team of experts. We'll analyze your website and develop a suitable conversion-rate strategy." 
-              />
-
-              {/* Online Reputation Management */}
-              <ServiceCard 
-                icon={ChartNetwork} 
-                iconColor="#60d1d0" 
-                borderColor="teal-200"
-                title="Real-Time Social Media Analytics" 
-                description="We produce bespoke reports and technical audits that can help your business with specific areas of digital marketing." 
-              />
+              {/* Service Cards */}
+              {servicecardData.map((card, index) => (
+                <ServiceCard key={index} {...card} />
+              ))}
 
             </div>
 

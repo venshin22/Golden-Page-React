@@ -1,13 +1,8 @@
 import React from 'react';
 import { LucideIcon } from 'lucide-react';
+import { FeatureCardTypes } from '../../../../types/FeatureCardTypes';
 
-interface FeatureCardProps {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-  iconColor?: string;
-  iconBgColor?: string;
-}
+type FeatureCardProps = FeatureCardTypes;
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
   icon: Icon,

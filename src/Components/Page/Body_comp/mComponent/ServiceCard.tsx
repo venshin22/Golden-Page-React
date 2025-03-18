@@ -1,15 +1,8 @@
 import React from "react";
 import { LucideIcon } from "lucide-react";
+import { ServiceCardData } from "../../../../types/ServiceCardTypes";
 
-interface ServiceCardProps {
-  icon?: LucideIcon;
-  iconColor?: string;
-  iconSize?: number;
-  iconStrokeWidth?: number;
-  title?: string;
-  description?: string;
-  borderColor?: string;
-}
+type ServiceCardProps = ServiceCardData;
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   icon: Icon,
@@ -24,7 +17,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   const borderClass = borderColor ? `border-${borderColor}` : 'border-transparent';
   
   return (
-    <div className="flex w-full lg:w-96 pl-2 pr-6">
+    <div className="flex w-full lg:w-96 ">
       <div className="flex mr-4 p-2">
         {Icon && (
           <Icon 

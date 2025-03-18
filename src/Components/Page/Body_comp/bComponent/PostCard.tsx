@@ -1,14 +1,7 @@
 import React from "react";
+import { PostCardData } from "../../../../types/PostCardTypes";
 
-interface PostCardProps {
-    imgSrc?: string;
-    title?: string;
-    alt?: string;
-    bgColor?: string;
-    hoverBgColor?: string;
-    headerBgColor?: string;
-    headerHoverBgColor?: string;
-}
+type PostCardProps = PostCardData;
 
 const PostCard: React.FC<PostCardProps> = ({
     imgSrc,

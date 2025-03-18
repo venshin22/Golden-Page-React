@@ -1,7 +1,12 @@
 import PostCard from "./bComponent/PostCard"
 import FeatureCard from "./bComponent/FeatureCard"
 import { Anchor, CircleDollarSign, Mail, MapPin, MapPinned, MessageCircle, PencilRuler, Target } from "lucide-react"
+import { postcardData } from "../../../data/PostCardData"
+import { featurecardData } from "../../../data/FeatureCardData"
+
 export default function Bottom() {
+    const firstRowCards = featurecardData.slice(0, 3);
+    const secondRowCards = featurecardData.slice(3, 6);
     return (
         <>
         <div className="flex flex-col w-full items-center justify-center pt-4 pb-10 px-8 border border-gray-200 border-x-0">
@@ -15,102 +20,29 @@ export default function Bottom() {
         <div className="w-full flex flex-col items-center justify-center text-white">
 
             <div className="w-full lg:w-[75rem] gap-4 md:gap-0 flex flex-col lg:flex-row items-center justify-center p-4">
-                {/* Social Media Marketing */}
-                <PostCard
-                    imgSrc="/assets/socmed.png"
-                    title="Social Media Marketing"
-                    alt="Social Media Marketing"
-                    bgColor="#215a94"
-                    hoverBgColor="#022b59"
-                    headerBgColor="#204e80"
-                    headerHoverBgColor="#022b59"
-                />
 
-                {/* Organic Long-Term SEO */}
-                <PostCard
-                    imgSrc="/assets/se.png"
-                    title="Organic Long-Term SEO"
-                    alt="Organic Long-Term SEO"
-                    bgColor="#56aee3"
-                    hoverBgColor="#1e81b0"
-                    headerBgColor="#44a2db"
-                    headerHoverBgColor="#1e81b0"
-                />
-
-                {/* Advanced Analytics Card */}
-                <PostCard
-                    imgSrc="/assets/analytic.png"
-                    title="Advanced Analytics"
-                    alt="Advanced Analytics"
-                    bgColor="#a1c627"
-                    hoverBgColor="#8bac24"
-                    headerBgColor="#90b636"
-                    headerHoverBgColor="#8bac24"
-                />
-
-                {/* Pay Per Click Strategies Card */}
-                <PostCard
-                    imgSrc="/assets/ads.png"
-                    title="Pay Per Click Strategies"
-                    alt="Pay Per Click Strategies"
-                    bgColor="#8bac24"
-                    hoverBgColor="#5e7f0b"
-                    headerBgColor="#7da02c"
-                    headerHoverBgColor="#5e7f0b"
-                />
+                {/* PostCards */}
+                {postcardData.map((card, index) => (
+                    <PostCard key={index} {...card} />
+                    ))}
             </div>
         
 
             <div className="w-full flex flex-col items-center md:items-start gap-8 md:gap-14 justify-center mt-8 text-gray-600 mx-8">
 
-
             <div className="w-full lg:w-[75rem] flex flex-col lg:flex-row items-center justify-between gap-8 mx-auto">
 
-            <FeatureCard
-                icon={MapPin}
-                title="Local Search Strategy"
-                description="Maximize your presence on search engine results pages on a local scale"
-                iconBgColor="#64b3e3"
-                />
-
-            <FeatureCard
-                icon={MapPinned}
-                title="Map Search Optimization"
-                description="Google Maps Optimization is an important part of any successful local marketing strategy"
-                iconBgColor="#9ec73b"
-                />
-
-            <FeatureCard
-                icon={Anchor}
-                title="Link Building & Content"
-                description="Link building is and will continue to be a tremendously important component of Search Engine Optimizaiton (SEO)."
-                iconBgColor="#ff9e28"
-                />
+            {firstRowCards.map((card, index) => (
+                <FeatureCard key={index} {...card} />
+            ))}
 
             </div>
 
             <div className="w-full lg:w-[75rem] flex flex-col lg:flex-row items-center gap-8 justify-between mx-auto">
 
-            <FeatureCard
-                icon={Target}
-                title="Paid Search Advertising"
-                description="Paid listings on Google AdWords and Microsoft AdCenter can help you reach new customers."
-                iconBgColor="#265a92"
-                /> 
-
-            <FeatureCard
-                icon={PencilRuler}
-                title="Custome Website Design"
-                description="Our team specializes in afforable web design and e-commerce."
-                iconBgColor="#88ad34"
-                />    
-
-            <FeatureCard
-                icon={Mail}
-                title="Custom Email Design"
-                description="Custom email templates that speak to your customers and resonate with your brand."
-                iconBgColor="#f86a40"
-                />
+            {secondRowCards.map((card, index) => (
+                <FeatureCard key={index} {...card} />
+            ))}
 
             </div>
         </div>
