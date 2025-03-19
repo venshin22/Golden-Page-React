@@ -5,6 +5,7 @@ import Body from './Components/Page/Body';
 import Services from './Services_pg';
 import './App.css';
 import About from './About_pg';
+import Contact from './Contact_pg';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<Body />} />
           <Route path="/services" element={<Services />} />
           <Route path='/about' element={<About/>} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
         <Footer />
       </div>

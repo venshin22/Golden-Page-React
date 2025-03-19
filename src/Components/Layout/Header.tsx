@@ -48,6 +48,7 @@ export default function Header() {
                     <li className="hover:text-blue-600 hover:cursor-pointer">Blog</li>
                     <li className="relative">
                         <a 
+                        href="/contact"
                         id="dropdownHoverContacts"
                         type="button"
                         onMouseEnter={() => setContactsDropdownVisible(true)}

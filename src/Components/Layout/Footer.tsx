@@ -10,7 +10,7 @@ export default function Footer() {
                         Digital Marketing That Grows Your Business
                     </h1>
                 </div>
-                <span className="text-center font-thin text-gray-50 px-4 mt-4 max-w-2xl">
+                <span className="text-center font-thin text-gray-200 px-4 mt-4 max-w-2xl">
                     We are a digital marketing agency in the Philippines that connects people, ideas, and opportunities. We specialize in digital advertising, website design, and content creation.
                 </span>
 
