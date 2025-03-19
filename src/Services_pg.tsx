@@ -1,4 +1,4 @@
-import ServBody from "./Services_Components/ServBody";
+import ServBody from "./Components/Page/ServBody";
 
 export default function Services () {
     return(

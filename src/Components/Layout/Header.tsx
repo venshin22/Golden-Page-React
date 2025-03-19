@@ -13,19 +13,22 @@ export default function Header() {
         <div className="flex flex-col items-center justify-between">
         <div className="flex flex-col lg:flex-row w-full lg:w-[75rem] shrink items-center justify-between gap-8 bg-white pt-7 lg:py-7">
             <div className="flex ">
+                <a href="/" className="hover:cursor-pointer">
                 <img src="/assets/golden_img.png" alt="logo_blck" className="h-10 lg:h-12"/>
+                </a>
             </div>
             <div className="hidden lg:block lg:flex-row lg:text-xl font-thin">
                 <ul className="flex p-4 space-x-6">
                     <li className="relative">
-                        <button 
+                        <a 
+                        href="/about"
                         id="dropdownHoverAbout"
                         type="button"
                         onMouseEnter={() => setAboutDropdownVisible(true)}
                         onMouseLeave={() => setAboutDropdownVisible(false)}  
-                        className="hover:text-blue-600"
+                        className="hover:text-blue-600 hover:cursor-pointer"
                         data-dropdown-toggle="dropdownHover"
-                        data-dropdown-trigger="hover">About</button>
+                        data-dropdown-trigger="hover">About</a>
                         <About_drpdwn isVisible={isAboutDropdownVisible} />
                     </li>
                     
@@ -42,16 +45,16 @@ export default function Header() {
                         <Services_drpdwn isVisible={isServicesDropdownVisible} />
                     </li>
                     
-                    <li className="hover:text-blue-600">Blog</li>
+                    <li className="hover:text-blue-600 hover:cursor-pointer">Blog</li>
                     <li className="relative">
-                        <button 
+                        <a 
                         id="dropdownHoverContacts"
                         type="button"
                         onMouseEnter={() => setContactsDropdownVisible(true)}
                         onMouseLeave={() => setContactsDropdownVisible(false)}  
-                        className="hover:text-blue-600"
+                        className="hover:text-blue-600 hover:cursor-pointer"
                         data-dropdown-toggle="dropdownHoverContacts"
-                        data-dropdown-trigger="hover">Contact</button>
+                        data-dropdown-trigger="hover">Contact</a>
                         <Contact_drpdwn isVisible={isContactsDropdownVisible} />
                     </li>
                 </ul>
