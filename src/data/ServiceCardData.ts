@@ -1,13 +1,13 @@
 import { ShieldHalf, SlidersVertical, ChartNetwork } from "lucide-react";
-import { ServiceCardData } from "../types/ServiceCardTypes";
+import { ServiceCardTypes } from "../types/ServiceCardTypes";
 
 
-export const servicecardData: ServiceCardData[] = [
+export const servicecardData: ServiceCardTypes[] = [
     {
 	icon: ShieldHalf,
 	iconStrokeWidth: 0.5,
 	iconColor: "purple",
-	borderColor: "purple",
+	borderColor: "#f6dfff",
 	title: "Online Reputation Management",
 	description: "Analyzing negative materials about your brand and addressing them with sentiment analysis and press release distribution."
 },

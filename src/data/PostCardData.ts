@@ -1,6 +1,6 @@
-import { PostCardData } from "../types/PostCardTypes";
+import { PostCardTypes } from "../types/PostCardTypes";
 
-export const postcardData: PostCardData[] = [
+export const postcardData: PostCardTypes[] = [
     {
         imgSrc: "/assets/socmed.png",
         title: "Social Media Marketing",

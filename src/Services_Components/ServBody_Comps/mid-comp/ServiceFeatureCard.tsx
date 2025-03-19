@@ -1,14 +1,14 @@
 import React from 'react';
-import { FeatureCardTypes } from '../../../../types/FeatureCardTypes';
+import { FeatureCardTypes } from '../../../types/FeatureCardTypes';
 
-type FeatureCardProps = FeatureCardTypes;
+type ServiceFeatureCardProps = FeatureCardTypes;
 
-const FeatureCard: React.FC<FeatureCardProps> = ({
+const ServiceFeatureCard: React.FC<ServiceFeatureCardProps> = ({
   icon: Icon,
   title,
   description,
   iconColor = "white",
-  iconBgColor
+  iconBgColor = "#60788b"
 }) => {
   return (
     <div className="flex w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl items-start pr-6">
@@ -22,16 +22,17 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         />
       </div>
       <div className="flex flex-col font-thin">
-        <h1 className="text-xl sm:text-2xl pb-2 sm:pb-4">
+        <h1 className="text-xl sm:text-2xl pb-2 sm:pb-4 text-white">
           {title}
         </h1>
-        <span className="text-sm md:text-md text-justify">
+        <span className="text-md text-gray-400">
           {description}
         </span>
+        <a className='py-1 px-4 border border-gray-50 rounded-md mt-4 w-28 text-md hover:bg-sky-600 hover:border-sky-600'>Learn More</a>
       </div>
-      
+    
     </div>
   );
 };
 
-export default FeatureCard;
+export default ServiceFeatureCard;
