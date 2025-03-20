@@ -10,14 +10,14 @@ export default function Header() {
     const [isContactsDropdownVisible, setContactsDropdownVisible] = useState(false);
   
     return(
-        <div className="flex flex-col items-center justify-between">
+        <header className="flex flex-col items-center justify-between">
         <div className="flex flex-col lg:flex-row w-full lg:w-[75rem] shrink items-center justify-between gap-8 bg-white pt-7 lg:py-7">
             <div className="flex ">
                 <a href="/" className="hover:cursor-pointer">
                 <img src="/assets/golden_img.png" alt="logo_blck" className="h-10 lg:h-12"/>
                 </a>
             </div>
-            <div className="hidden lg:block lg:flex-row lg:text-xl font-thin">
+            <nav className="hidden lg:block lg:flex-row lg:text-xl font-thin">
                 <ul className="flex p-4 space-x-6">
                     <li className="relative">
                         <a 
@@ -59,11 +59,12 @@ export default function Header() {
                         <Contact_drpdwn isVisible={isContactsDropdownVisible} />
                     </li>
                 </ul>
-            </div>
-            <div>
+            </nav>
+
+            <div className="button">
                 <span className="hidden lg:flex font-semibold items-center p-2 px-4 mr-8 text-white gap-2 rounded-md bg-[#a1c627] hover:bg-sky-500"><ChartNoAxesColumn color="white" size={15} strokeWidth={4}/> FREE QUOTE</span>
             </div>
         </div>
-        </div>
+        </header>
     )
 }

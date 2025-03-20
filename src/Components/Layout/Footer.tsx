@@ -26,7 +26,7 @@ export default function Footer() {
                 </div>
             </footer>
 
-            <div className="w-full flex items-center justify-center bg-[#25282a] py-6">
+            <footer className="w-full flex items-center justify-center bg-[#25282a] py-6">
                 <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between px-4 gap-4">
                     <div className="flex gap-2 mr-8">
                         <a href="https://www.facebook.com/goldenarrowdigitalsolution/" target="_blank">
@@ -51,7 +51,7 @@ export default function Footer() {
                     © {new Date().getFullYear()} Golden Arrow. All rights reserved.
                     </span>
                 </div>
-            </div>
+            </footer>
         </>
     );
 }
