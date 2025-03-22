@@ -14,8 +14,8 @@ const ServiceStratCard: React.FC<ServicestratCardProps> = ({
 }) => {
   
   return (
-    <div className="flex justify-between gap-2 text-gray-700">
-      <div className="flex p-6 gap-6">
+    <div className="flex justify-between text-gray-700">
+      <div className="flex px-6 py-4 gap-6">
         {Icon && (
           <Icon 
             color={iconColor} 
@@ -25,7 +25,7 @@ const ServiceStratCard: React.FC<ServicestratCardProps> = ({
             style={{borderColor: borderColor}}
           />
         )}
-        <div className="flex flex-col font-thin gap-6">
+        <div className="flex flex-col font-thin gap-4">
         <h1 className="text-3xl">
           {title}
         </h1>

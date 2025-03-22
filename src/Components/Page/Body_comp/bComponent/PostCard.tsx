@@ -14,7 +14,7 @@ const PostCard: React.FC<PostCardProps> = ({
 }) => {
     return (
         <div 
-            className={`w-[18.75rem] flex flex-col items-center justify-center hover:cursor-pointer`}
+            className={`w-full flex flex-col items-center justify-center hover:cursor-pointer`}
             style={{ backgroundColor: bgColor }}
         >
             {imgSrc && (

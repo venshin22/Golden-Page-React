@@ -11,7 +11,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   iconBgColor
 }) => {
   return (
-    <div className="flex w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl items-start pr-6">
+    <div className="flex w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl items-start p-4 h-[9rem] rounded-lg shadow-md hover:drop-shadow-xl hover:scale-110 transition-all ease-in-out duration-300">
       <div className="flex mr-4 p-2">
         <Icon 
           color={iconColor} 

@@ -4,13 +4,13 @@ export default function Footer() {
     return (
         <>
             <footer className="flex flex-col w-full items-center justify-between px-4 md:px-8 py-8 bg-[#282d30] text-gray-100">
-                <div className="flex flex-col lg:flex-row items-center gap-5 justify-center px-4">
+                <div className="flex flex-col lg:flex-row items-center gap-5 justify-center px-4 py-6">
                     <img src="/assets/golden_img2.png" alt="logo" className="h-12 lg:h-16" />
                     <h1 className="text-xl lg:text-2xl text-gray-100 font-sans uppercase text-center">
                         Digital Marketing That Grows Your Business
                     </h1>
                 </div>
-                <span className="text-center font-thin text-gray-200 px-4 mt-4 max-w-2xl">
+                <span className="text-center font-thin text-gray-200 px-4 mt-4 max-w-2xl pb-4">
                     We are a digital marketing agency in the Philippines that connects people, ideas, and opportunities. We specialize in digital advertising, website design, and content creation.
                 </span>
 

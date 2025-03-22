@@ -2,17 +2,19 @@ import { Mail, Phone } from "lucide-react"
 export default function Contact () {
     return (
         <div className="w-screen flex flex-col items-center justify-center py-12">
-            <div className="w-full h-[20rem] flex items-center justify-center bg-rose-200">
-                <span>Map</span>
+            <div className="w-full h-[20rem] flex items-center justify-center bg-gradient-to-r from-black to-[#f7b719]">
+                <span className="text-xl text-white font-semibold capitalize">Map</span>
             </div>
             <div className="w-full md:w-[75rem] bg-white flex flex-col md:flex-row justify-center py-10">
-                <div className="flex flex-col gap-4 p-6 md:p-4">
-                    <span className="text-3xl text-gray-700 flex items-center"><Phone color="gray" size={20}/>(02) 8373-5645</span>
+                <div className="flex flex-col justify-center gap-4 p-6 md:p-4 border-r-2 mr-6">
+                    <span className="text-3xl text-gray-700 flex items-center gap-2"><Phone color="black" size={25}/>(02) 8373-5645</span>
                     <span className="text-gray-400 mb-4">Monday-Friday 9am-6pm</span>
-                    <span className="text-sky-300 hover:text-sky-600 flex mb-8"><Mail color="blue" size={20}/> goldenarrowsolutions@gmail.com</span>
+                    <span className="text-sky-300 hover:text-sky-600 flex mb-8 items-center gap-1"><Mail color="blue" size={20}/> goldenarrowsolutions@gmail.com</span>
                     <span className="text-xl text-gray-600">4th Floor 331 Bldg Sen. Gil Puyat <br/> Ave, Makati City</span>
                 </div>
-                <form className="flex flex-col w-full md:w-[45rem] p-6 md:p-4">
+
+
+                <form className="flex flex-col w-full md:w-[45rem] p-6 md:p-4 shadow-xl rounded-lg ml-4 border border-gradient-to-right from-black to-[#f7b719]">
                 <h2 className="text-2xl font-bold mb-4">Start a conversation</h2>
                     <div className="flex justify-between gap-6">
                         <div className="mb-4 w-full">
@@ -65,7 +67,7 @@ export default function Contact () {
 
                     <button
                     type="submit"
-                    className="w-[10rem] bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2"
+                    className="w-[10rem] bg-gradient-to-r from-black to-[#f7b719] text-white py-2 px-4 rounded-md hover:bg-indigo-700 hover:scale-110 transition-all ease-in-out duration-300 border hover:border-gray-700 animate-bounce font-semibold"
                     >
                     Submit
                     </button>

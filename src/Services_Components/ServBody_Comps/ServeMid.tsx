@@ -8,8 +8,9 @@ export default function ServeMid () {
     return(
         <div className="w-full flex flex-col shrink items-center justify-center text-white bg-[#2a4357] p-[4%] gap-8 md:gap-14" >
 
-            <div className="w-full flex flex-col items-center justify-center text-white p-[4%] gap-8 md:gap-14">
-            <div className="w-full lg:w-[75rem] flex flex-col md:flex-row lg:flex-row gap-8 mx-auto">
+            <section className="w-full flex flex-col items-center justify-center text-white p-[4%] gap-8 md:gap-14">
+                
+            <div className="w-full lg:w-[75rem] flex flex-col justify-center md:flex-row lg:flex-row gap-6 mx-auto">
 
             {firstRowCards.map((card, index) => (
                 <ServiceFeatureCard key={index} {...card} />
@@ -17,14 +18,14 @@ export default function ServeMid () {
 
             </div>
 
-            <div className="w-full lg:w-[75rem] flex flex-col md:flex-row gap-8 mx-auto">
+            <div className="w-full lg:w-[75rem] flex flex-col justify-center md:flex-row gap-6 mx-auto">
 
             {secondRowCards.map((card, index) => (
                 <ServiceFeatureCard key={index} {...card} />
             ))}
 
             </div>
-            </div>
+            </section>
 
             <div className="flex flex-col md:flex-row px-4 gap-8 lg:gap-4 justify-center text-white">
             <ButtonFree/>

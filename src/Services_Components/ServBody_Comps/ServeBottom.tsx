@@ -10,7 +10,7 @@ export default function ServeBottom(){
             </div>
 
             <div className="flex flex-col md:flex-row"></div>
-            <div className="flex flex-col md:flex-row lg:w-[75rem] py-12 px-4">
+            <div className="flex flex-col md:flex-row lg:w-[75rem] justify-between py-12 px-4 border-y-2 mt-4">
             {servicestratcardData.map((card, index) => (
                     <ServiceStratCard key={index} {...card} />
                     ))}

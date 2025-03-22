@@ -45,7 +45,11 @@ export default function Header() {
                         <Services_drpdwn isVisible={isServicesDropdownVisible} />
                     </li>
                     
-                    <li className="hover:text-blue-600 hover:cursor-pointer">Blog</li>
+                    <li className="hover:text-blue-600 hover:cursor-pointer">
+                        <a
+                        href="/blog"
+                        type="button"
+                        >Blog</a></li>
                     <li className="relative">
                         <a 
                         href="/contact"
@@ -61,8 +65,8 @@ export default function Header() {
                 </ul>
             </nav>
 
-            <div className="button">
-                <span className="hidden lg:flex font-semibold items-center p-2 px-4 mr-8 text-white gap-2 rounded-md bg-[#a1c627] hover:bg-sky-500"><ChartNoAxesColumn color="white" size={15} strokeWidth={4}/> FREE QUOTE</span>
+            <div className="button animate-bounce">
+                <span className="hidden lg:flex font-semibold items-center shadow-md p-2 px-4 mr-8 text-white gap-2 rounded-md bg-[#a1c627] hover:bg-sky-500 cursor-pointer"><ChartNoAxesColumn color="white" size={15} strokeWidth={4}/> FREE QUOTE</span>
             </div>
         </div>
         </header>

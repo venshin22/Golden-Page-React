@@ -15,8 +15,8 @@ export const ServCard: React.FC<ServCardProps> = ({
     footerText = "Learn More"
 }) => {
     return (
-        <div className="flex flex-col w-full items-center p-2.5">
-            <div className="flex flex-col w-full lg:w-full h-full items-center p-6" style={{ backgroundColor: bgColor }}>
+        <div className="flex flex-col w-full items-center">
+            <div className="flex flex-col w-full lg:w-full h-full items-center p-6 cursor-pointer" style={{ backgroundColor: bgColor }}>
                 <div className="lg:p-8 lg:h-[20rem]">
                     {imgSrc && (
                         <img 
@@ -31,7 +31,7 @@ export const ServCard: React.FC<ServCardProps> = ({
                 </div>
             </div>
 
-            <div className="flex w-full p-4 py-6 text-white" style={{ backgroundColor: footerBgColor }}>
+            <div className="flex w-full p-4 py-6 text-white hover:font-bold" style={{ backgroundColor: footerBgColor }}>
                 <ChevronRight />
                 <h1>{footerText}</h1>
             </div>

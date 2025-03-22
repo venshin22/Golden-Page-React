@@ -16,7 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
   
   return (
-    <div className="flex w-full lg:w-96 ">
+    <div className="flex w-full lg:w-96 rounded-lg shadow-md px-2 py-2.5 h-[11.75rem] hover:scale-110 transition-all ease-in-out duration-300">
       <div className="flex mr-4 p-2">
         {Icon && (
           <Icon 

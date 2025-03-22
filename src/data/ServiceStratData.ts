@@ -7,13 +7,13 @@ export const servicestratcardData: ServiceCardTypes[] = [
 	icon: Megaphone,
 	iconStrokeWidth: 0.5,
 	iconColor: "purple",
-	borderColor: "#f6dfff",
+	borderColor: "violet",
 	title: "Call To Action",
 	description: "Inspire the target audience from social networks to visit your website"
 },
 {
 	icon: MessagesSquare,
-	iconStrokeWidth: 1.4,
+	iconStrokeWidth: 1,
 	iconColor: "#f7c2a5",
 	borderColor: "#f7c2a5",
 	title: "Engage",
@@ -21,6 +21,7 @@ export const servicestratcardData: ServiceCardTypes[] = [
 },
 {
 	icon: Heart,
+	iconStrokeWidth: 1,
 	iconColor: "#60d1d0",
 	borderColor: "#60d1d0",
 	title: "Inspire",
